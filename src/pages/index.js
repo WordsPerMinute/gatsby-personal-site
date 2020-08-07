@@ -1,13 +1,14 @@
 import React from "react"
+import { Link } from "gatsby"
+import Header from "../components/header"
 
 export default function Home() {
   return (
 
     <div style={{ color: `purple` }}>
-      {/* highlight-start */}
-      <h1>Hello Gatsby!</h1>
+      <Link to="/contact">Contact</Link>
+      <Header headerText="Bio"/>
       <p>What a world.</p>
-      {/* highlight-start */}
       <img src="https://source.unsplash.com/random/400x200" alt="" />
     </div>
  

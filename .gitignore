@@ -1,3 +1,21 @@
+# Directories
+.well-known
+cgi-bin
+u
+assets
+
+# HostGator files
+.htaccess
+.ftpquota
+default.html
+
+# Git
+.gitignore
+
+#Other
+Resume.pdf
+
+
 # Logs
 logs
 *.log
