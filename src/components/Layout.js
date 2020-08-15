@@ -15,18 +15,18 @@ export default function Layout({ children }) {
     )
 
   return (
-    <div class="site-wrapper">
-      <div class="header-and-nav-wrapper">
+    <div className="site-wrapper">
+      <div className="header-and-nav-wrapper">
         <header>
-          <Link to={`/`}>
-              <h3 class="header-title">
+              <h3 className="header-title">
+                <Link to={`/`}>
                 {data.site.siteMetadata.title}
+                </Link>
               </h3>
-          </Link>
         </header>
         <nav className="nav">
           <Link to={`/`}>
-              Home
+              
           </Link>
           <Link to={`/projects/`}>
               Projects

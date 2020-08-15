@@ -7,7 +7,7 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
-        <ContentHeader headerText="Welcome"/>
+        <ContentHeader headerText=""/>
     </Layout>
   )
 }

@@ -1,31 +1,34 @@
-import { React, useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import ContentHeader from '../components/ContentHeader'
-import { Document, Page } from 'react-pdf';
 import Layout from "../components/Layout";
+import { Document, Page } from 'react-pdf';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import { SizeMe } from 'react-sizeme'
+import samplepdf from './Resume.pdf'
 
 export default function Resume({ data }) {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
  
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
   return (
     <Layout>
         <ContentHeader headerText="Resume"/>
         <p>
-          We're the only site running on your computer dedicated to showing the
-          best photos and videos of pandas eating lots of food.
+          <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>View</a>
+          <span> or </span>
+          <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>save</a>
+          <span></span>
         </p>
-        <Document
-          file="http://coreyhodge.net/Resume.pdf"
-          onLoadSuccess={onDocumentLoadSuccess} 
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
-
+        <SizeMe>
+        {({ size }) => (
+            <Document
+              className="resume"
+              file={samplepdf}
+              renderAnnotationLayer={true}
+              externalLinkTarget="_blank">
+              <Page pageNumber={1} width={size.width ? 698 : 1}/>
+            </Document>
+          )}
+        </SizeMe>
     </Layout>
   )
 }

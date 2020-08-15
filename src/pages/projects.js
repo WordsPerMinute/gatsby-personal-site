@@ -7,21 +7,21 @@ export default function Projects({ data }) {
   return (
     <Layout>
         <ContentHeader headerText="Projects"/>
-        <article>
+        <article className="project-card">
           <h2>FoodTrucks.Show</h2>
           <p>
             Show local Denver food trucks on a lightweight and easy to use interface
           </p>
-          <iframe title="foodtrucks video" class="project-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/tLvKEjiw-aU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe title="foodtrucks video" class="project-video" width="500" height="281" src="https://www.youtube-nocookie.com/embed/tLvKEjiw-aU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
-        <article>
+        <article className="project-card">
           <h2>You, but Better</h2>
           <p>
           Social goal accountability app, designed around the SMART goal framework
           </p>
           <img src={require('../images/ybb_overview.gif')}  alt="overview animation for You, but Better"/>
         </article>
-        <article>
+        <article className="project-card">
           <h2>Match to Speak</h2>
           <p>
           Proof of concept app to match foreign language learners with teachers

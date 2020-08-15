@@ -10,7 +10,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-plugin-emotion`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
