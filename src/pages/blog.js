@@ -7,7 +7,7 @@ export default function Bio({ data }) {
   return (
     <Layout>
         <ContentHeader headerText="Blog"/>
-        <h4 className="post-count">{data.allMarkdownRemark.totalCount} Posts</h4>
+        <h4 className="section-subheading">{data.allMarkdownRemark.totalCount} Posts</h4>
         {/* map over the blog instances to population them on the page */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <article className="blog-preview" key={node.id}>

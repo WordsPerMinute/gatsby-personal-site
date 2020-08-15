@@ -12,12 +12,12 @@ export default function Resume({ data }) {
   return (
     <Layout>
         <ContentHeader headerText="Resume"/>
-        <p>
+        <h4 className="section-subheading">
           <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>View</a>
           <span> or </span>
           <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>save</a>
           <span></span>
-        </p>
+        </h4>
         <SizeMe>
         {({ size }) => (
             <Document

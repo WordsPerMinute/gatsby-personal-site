@@ -3,16 +3,20 @@
 @import '_sizes.scss';
 @import '_typography.scss';
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     padding-left: calc(100vw - 100%);
-    background-color: #073642;
+    background-color: hsla(46,42,88, .3);
 }
 
 .site-wrapper {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 950px;
+    min-height: 100vh;
     padding: 50px;
-    padding-top: 40px;
     background-color: #ffffff;
 }
 
@@ -20,6 +24,7 @@ body {
     margin-bottom: $xxxxl;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-title {
@@ -50,6 +55,8 @@ body {
 .resume {
     border: 1px solid hsla(0, 0, 90, 100);
     margin-top: $xl;
+    display: flex;
+    justify-content: center;
 }
 
 
