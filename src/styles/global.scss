@@ -1,6 +1,6 @@
 @import '_reset.scss';
-// @import '_colors.scss';
-// @import '_sizes.scss';
+@import '_colors.scss';
+@import '_sizes.scss';
 @import '_typography.scss';
 
 .site-wrapper {
@@ -31,12 +31,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
 }
 
-p, a {
-    font-family: $body-font;
-    line-height: 1.6;   
-}
-
 h1 {
+    font-size: 32px;
     display: inline-block;
     border-bottom: 1px solid hsla(0, 0, 90, 100);
     padding-bottom: 0;
@@ -45,6 +41,7 @@ h1 {
 }
 
 h3 {
+    font-size: 22px;
     a {
         color: #4078c0;
     }
@@ -54,6 +51,7 @@ h3 {
 }
 
 h3, h4, h5, h6 {
+    font-size: 16px;
     padding-bottom: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -62,7 +60,16 @@ h3, h4, h5, h6 {
 h6 {
     color: hsla(0, 0, 20, 100);
 }
-// roboto
+
+p, a {
+    font-size: 16px;
+    font-family: $body-font;
+    line-height: 1.6;
+}
+
+p {
+    margin-top: $small;
+}
 
 ol, ul {
     margin-left: 0px;
