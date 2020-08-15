@@ -1,11 +1,28 @@
-import React from "react"
-import Header from "../components/header"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import ContentHeader from '../components/ContentHeader'
+import Layout from "../components/Layout";
 
-export default function Bio() {
+export default function Bio({ data }) {
   return (
-    <div style={{ color: `teal` }}>
-      <Header headerText="Bio"/>
-      <p>Such wow. Very React.</p>
-    </div>
+    <Layout>
+        <ContentHeader headerText="Bio"/>
+        <p>
+          I am a bilingual (English/Spanish) developer who has lived in 10 U.S. states, Chile, and Germany. I have a passion for how digital networks help us connect and learn across borders.
+        </p>
+        <p>
+          I have experience building web applications, managing marketing assets, teaching, and public speaking. On teams, my distinct background has taught me what is possible when we compassionately expect excellence from each other.
+        </p>
+    </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

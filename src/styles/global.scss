@@ -1,0 +1,91 @@
+@import '_reset.scss';
+// @import '_colors.scss';
+// @import '_sizes.scss';
+@import '_typography.scss';
+
+.site-wrapper {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 50px;
+    padding-top: 40px;
+}
+
+.header-and-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin-bottom: 50px;
+    display: inline-block;
+    font-style: normal;
+}
+
+.nav > * {
+    margin-left: 10px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+
+p, a {
+    font-family: $body-font;
+    line-height: 1.6;   
+}
+
+h1 {
+    display: inline-block;
+    border-bottom: 1px solid hsla(0, 0, 90, 100);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3 {
+    a {
+        color: #4078c0;
+    }
+    span {
+        color: #bbb;
+    }
+}
+
+h3, h4, h5, h6 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h6 {
+    color: hsla(0, 0, 20, 100);
+}
+// roboto
+
+ol, ul {
+    margin-left: 0px;
+}
+
+li>ol, li>ul {
+    margin-left: 0px
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:active {
+    text-decoration: "underline",
+}
+
+blockquote {
+    border-left: 4px solid hsla(0, 0, 90, 100);
+    color: hsla(0, 0, 40, 100);
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+}

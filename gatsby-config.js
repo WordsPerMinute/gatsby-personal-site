@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
+    title: `coreyhodge.net`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -20,9 +20,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        name: `content`,
+        path: `${__dirname}/content/`,
       },
     },
   ],
