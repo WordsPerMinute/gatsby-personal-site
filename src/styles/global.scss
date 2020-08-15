@@ -22,77 +22,17 @@
 }
 
 .nav > * {
-    margin-left: 10px;
+    margin-left: $baseline;
 }
 
+// ol, ul {
+//     margin-left: 0px;
+// }
 
+// li>ol, li>ul {
+//     margin-left: 0px
+// }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $title-font;
-}
-
-h1 {
-    font-size: 32px;
-    display: inline-block;
-    border-bottom: 1px solid hsla(0, 0, 90, 100);
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-h3 {
-    font-size: 22px;
-    a {
-        color: #4078c0;
-    }
-    span {
-        color: #bbb;
-    }
-}
-
-h3, h4, h5, h6 {
-    font-size: 16px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-h6 {
-    color: hsla(0, 0, 20, 100);
-}
-
-p, a {
-    font-size: 16px;
-    font-family: $body-font;
-    line-height: 1.6;
-}
-
-p {
-    margin-top: $small;
-}
-
-ol, ul {
-    margin-left: 0px;
-}
-
-li>ol, li>ul {
-    margin-left: 0px
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover, a:active {
-    text-decoration: "underline",
-}
-
-blockquote {
-    border-left: 4px solid hsla(0, 0, 90, 100);
-    color: hsla(0, 0, 40, 100);
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
+.blog-preview {
+    margin-top: $xl;
 }

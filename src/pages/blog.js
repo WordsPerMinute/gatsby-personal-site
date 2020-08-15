@@ -10,7 +10,7 @@ export default function Bio({ data }) {
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {/* map over the blog instances to population them on the page */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
+          <article className="blog-preview" key={node.id}>
             <Link className="link" to={node.fields.slug} >
               <h3>
                 {node.frontmatter.title}{" "}
@@ -20,7 +20,7 @@ export default function Bio({ data }) {
               </h3>
               <p>{node.excerpt}</p>
             </Link>
-          </div>
+          </article>
         ))}
     </Layout>
   )
