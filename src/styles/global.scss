@@ -14,7 +14,7 @@ body {
 
 .site-wrapper {
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 900px;
     min-height: 100vh;
     padding: 50px;
     background-color: #ffffff;
@@ -59,13 +59,37 @@ body {
     justify-content: center;
 }
 
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .project-card {
-    max-width: 650px;
+    flex: 0 1 48%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px 16px;
+    margin-bottom: $large;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    h2 {
+        text-align: center;
+        font-size: $font-large;
+        margin-top: $xs;
+    }
+    p {
+        font-size: $font-small;
+    }
+    // max-width: 650px;
     img {
-        max-width: 500px;
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
     }
     iframe {
-        max-width: 650px;
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
     }
 }

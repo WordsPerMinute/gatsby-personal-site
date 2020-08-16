@@ -25,9 +25,6 @@ export default function Layout({ children }) {
               </h3>
         </header>
         <nav className="nav">
-          <Link to={`/`}>
-              
-          </Link>
           <Link to={`/projects/`}>
               Projects
           </Link>
@@ -38,7 +35,10 @@ export default function Layout({ children }) {
               Resume
           </Link>
           <Link to={`/bio/`}>
-              Bio
+              Photos
+          </Link>
+          <Link to={`/bio/`}>
+              Email
           </Link>
         </nav>
       </div>
