@@ -27,7 +27,7 @@ body {
 .content-wrapper {
     margin: 0 auto;
     max-width: 900px;
-    padding: 50px 50px 0px 50px;
+    padding: 50px 25px 0px 25px;
 }
 
 footer {
@@ -45,14 +45,18 @@ footer {
         (100vw - 100%)
     );
     // margin-right: -50px;
-    background-color: #657b83;
+    background-color: #fdf6e3;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
     .fa-icon {
-        color: #fdf6e3;
-        margin-left: 16px;
+        color: #195B8A;
+        margin-left: 32px;
+        transition: .3s;
+        &:hover {
+            color: #cb4b16;
+        }
     }
 }
 
@@ -62,7 +66,7 @@ main {
 
 
 .header-and-nav-wrapper {
-    margin-bottom: $xxxxl;
+    margin-bottom: $xxxl;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,12 +103,19 @@ main {
 //     margin-left: 0px
 // }
 
+.blog-preview-pic {
+    max-width: 200px;
+    margin-top: $small;
+}
+
 .blog-preview {
     margin-top: $xl;
 }
 
 .post-excerpt {
     color: $grey-2;
+    margin-top: 0;
+    font-size: $font-small;
 }
 
 .resume {

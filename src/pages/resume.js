@@ -22,7 +22,7 @@ export default function Resume({ data }) {
             <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Here</a> or click preview below
           </span>
         </h4>
-        <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'><img src={require('../images/resume_preview2.png')} className="resume-preview" /></a>
+        <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'><img src={require('../images/resume_preview2.png')} className="resume-preview" alt="Corey's resume"   /></a>
         <SizeMe>
         {({ size }) => (
             <Document

@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import ContentHeader from "../components/ContentHeader"
 import Layout from "../components/Layout"
-import Menu from '../components/BurgerMenu'
 
 
 export default function Home({ data }) {

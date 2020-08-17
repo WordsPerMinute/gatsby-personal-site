@@ -10,9 +10,10 @@ $body-font: 'Roboto', sans-serif;
 
 a {
     text-decoration: none;
-    color: #37668c;
+    transition: .3s;
+    color: #195B8A;
     &:visited {
-        color: #37668c;
+        color: #195B8A;
     }
     &:hover {
         color: #cb4b16;
@@ -83,10 +84,13 @@ p, a {
 }
 
 blockquote {
-    border-left: 4px solid hsla(0, 0, 90, 100);
+    // border-left: 4px solid hsla(0, 0, 90, 100);
     color: hsla(0, 0, 40, 100);
-    margin-top: 0;
+    margin-top: -30px;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 15px;
     padding-left: 0;
+    p {
+        font-size: 14px;
+    }
 }

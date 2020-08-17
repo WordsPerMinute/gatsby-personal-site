@@ -2,8 +2,11 @@ import React from "react";
 import {  Link, graphql } from "gatsby";
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
+import Img from "gatsby-image"
+
 
 export default function Bio({ data }) {
+
   return (
     <Layout>
         <ContentHeader headerText="Blog"/>
@@ -18,6 +21,7 @@ export default function Bio({ data }) {
                   — {node.frontmatter.date}
                 </span>
               </h3>
+              <img src={require(`../../content/${node.frontmatter.previewPic.relativePath}`)} className="blog-preview-pic" alt="blog preview picture"/>
               <p className="post-excerpt">{node.excerpt}</p>
             </Link>
           </article>
@@ -41,6 +45,9 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "DD MMMM, YYYY")
+          previewPic {
+            relativePath
+          }
         }
         fields {
           slug
