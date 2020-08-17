@@ -11,7 +11,7 @@ export default function Footer(props) {
   return (
     <footer>
         <a href="https://linkedin.com/in/coreyhodge" target='_blank' rel="noopener noreferrer">
-            <FaLinkedin className="fa-icon" />
+            <FaLinkedin className="fa-icon first" />
         </a>
         <a href="https://medium.com/@coreyhodgedotnet" target='_blank' rel="noopener noreferrer">
             <FaMedium className="fa-icon" />

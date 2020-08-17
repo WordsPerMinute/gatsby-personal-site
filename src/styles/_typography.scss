@@ -48,8 +48,9 @@ h3 {
             color: #cb4b16;
         }
     }
-    span {
+    .date-span {
         color: rgb(187, 187, 187);
+        font-size: 50%;
     }
 }
 
@@ -60,6 +61,7 @@ h4, h5, h6 {
 h4 {
     &.section-subheading {
         margin-top: -$large;
+        margin-left: 35px;
     }
 }
 
@@ -73,6 +75,9 @@ p {
     line-height: 2;
     font-size: $font-xl;
     max-width: 650px;
+    @media (max-width: 400px) {
+        font-size: $font-baseline;
+    }
 }
 
 h1 + p {

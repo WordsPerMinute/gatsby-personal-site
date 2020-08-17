@@ -2,16 +2,46 @@ import React from "react";
 import { graphql } from "gatsby";
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
-// import { BsWindow } from 'react-icons/bs'
+import Helmet from "react-helmet"
+
 import { DiGithubBadge } from 'react-icons/di'
 import { FaYoutubeSquare } from 'react-icons/fa'
+import { FaExternalLinkSquareAlt } from 'react-icons/fa'
 
 export default function Projects({ data }) {
   return (
     <Layout>
+        <Helmet>
+          <meta name="description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
+          <meta name="keywords" content="blog, web developer, software engineer, gatsby, colorado" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Corey Hodge / Colorado" />
+          <meta property="og:description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
+          <meta property="og:image" content="http://www.coreyhodge.net/assets/corey.png" />
+          <meta property="og:locale" content="LINK TO THE IMAGE FILE" />
+          <meta property="og:url" content="https://www.coreyhodge.net/projects" />
+          <meta property="og:site_name" content="Corey Hodge / Colorado" />
+          <link rel="canonical" href="https://www.coreyhodge.net/projects" />
+        </Helmet>
         <ContentHeader headerText="Projects"/>
         <section className="project-cards-container">
-          <card className="project-card">
+          <div className="project-card">
+            <div className="project-header">
+              <h2>Goto.pizza</h2>
+              <div className="project-icons">
+                <a href="https://goto.pizza" alt="Demo for goto.pizza"><FaExternalLinkSquareAlt className="icon external-icon" /></a>
+                <a href="https://github.com/bdell/goto.pizza" alt="Git Hub repo for goto.pizza"><DiGithubBadge className="icon github-icon" /></a>
+              </div>
+            </div>
+            <img src={require('../images/goto_overview.png')}  alt="overview animation for Goto.Pizza"/>
+            <p>
+              The fastest way to find hot pizza in your area!
+            </p>
+            <p className="special-note">
+              NOTE: As of Aug 17th I've noticed a bug due to a recent change in Google's API, will be fixing ASAP
+            </p>
+          </div>
+          <div className="project-card">
             <div className="project-header">
               <h2>FoodTrucks.Show</h2>
               <div className="project-icons">
@@ -23,8 +53,8 @@ export default function Projects({ data }) {
             <p>
               Show local Denver food trucks on a lightweight and easy to use interface
             </p>
-          </card>
-          <card className="project-card">
+          </div>
+          <div className="project-card">
             <div className="project-header">
               <h2>You, but Better</h2>
               <div className="project-icons">
@@ -36,8 +66,8 @@ export default function Projects({ data }) {
             <p>
             Social goal accountability app, designed around the SMART goal framework
             </p>
-          </card>
-          <card className="project-card">
+          </div>
+          <div className="project-card">
             <div className="project-header">
               <h2>Match to Speak</h2>
               <div className="project-icons">
@@ -48,7 +78,7 @@ export default function Projects({ data }) {
             <p>
             Proof of concept app to match foreign language learners with teachers
             </p>
-          </card>
+          </div>
         </section>
     </Layout>
   )

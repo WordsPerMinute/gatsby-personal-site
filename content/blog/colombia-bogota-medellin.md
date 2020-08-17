@@ -5,8 +5,8 @@ featuredImage: ./blog-images/colombia/Colombia-2.jpg
 previewPic: "../../content/blog/blog-images/colombia/Colombia-2.jpg"
 ---
 
-I'm re-uploading these photos while still looking for my original write-up.
-Will post the words when I find them, or rewrite what I can from memory!
+Re-uploaded these photos, and still looking for my original write-up.
+Will post the words when I find them, or what I remember from memory!
 
 ![](./blog-images/colombia/Colombia-13.jpg)
 
@@ -67,7 +67,7 @@ Will post the words when I find them, or rewrite what I can from memory!
 ![](./blog-images/colombia/Colombia-28.jpg)
 
 
-
+[return home](https://coreyhodge.net)
 
 
 

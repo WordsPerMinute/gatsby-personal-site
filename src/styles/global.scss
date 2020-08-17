@@ -2,6 +2,7 @@
 @import '_colors.scss';
 @import '_sizes.scss';
 @import '_typography.scss';
+@import 'blog.scss';
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -16,7 +17,7 @@ body {
 
 .site-wrapper {
     position: relative;
-    padding-bottom: 75px;
+    padding-bottom: 100px;
     min-height: 100vh;
     background-color: #ffffff;
     @media (max-width: 400px) {
@@ -25,8 +26,9 @@ body {
 }
 
 .content-wrapper {
+    height: 100%;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 750px;
     padding: 50px 25px 0px 25px;
 }
 
@@ -50,9 +52,14 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 32px;
+    a {
+        display: flex;
+    }
     .fa-icon {
         color: #195B8A;
-        margin-left: 32px;
+        &:not(.first) {
+            margin-left: 32px;
+        }
         transition: .3s;
         &:hover {
             color: #cb4b16;
@@ -92,8 +99,6 @@ main {
         display: none;
     }
 }
-.bm-menu {
-}
 
 // ol, ul {
 //     margin-left: 0px;
@@ -103,9 +108,40 @@ main {
 //     margin-left: 0px
 // }
 
+.article-card {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        display: flex;
+        min-width: 125px;
+        flex-direction: column;
+        @media (max-width: 600px) {
+            align-items: center;
+        }
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        .date-span {
+            margin-top: $xxs;
+        }
+    }
+}
+
 .blog-preview-pic {
-    max-width: 200px;
-    margin-top: $small;
+    max-width: 250px;
+    margin-left: $small;
+    margin-right: $small;
+    @media (max-width: 600px) {
+        max-width: 150px;
+        margin-top: $xs;
+        margin-bottom: $xxs;
+    }
 }
 
 .blog-preview {
@@ -179,6 +215,9 @@ main {
         .icon {
             margin-left: $xs;
         }
+        .external-icon {
+            font-size: 22px;
+        }
         .github-icon {
             font-size: 32px;
         }
@@ -203,6 +242,11 @@ main {
     p {
         font-size: $font-small;
         margin-top: $small;
+        &.special-note {
+            font-size: 8px;
+            color: $grey-6;
+            margin-top: 0px;
+        }
     }
     // max-width: 650px;
     img {
@@ -215,5 +259,3 @@ main {
         flex: auto;
     }
 }
-
-@import 'blog.scss';
