@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
+import { BurgerMenu } from './BurgerMenu'
 
 export default function Layout({ children }) {
     const data = useStaticQuery(
