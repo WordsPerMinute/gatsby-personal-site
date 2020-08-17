@@ -12,7 +12,7 @@ export default class BurgerMenu extends React.Component {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <div className="burger-menu-wrapper">
-        <Menu right >
+        <Menu right width={ 250 }>
           <Link to={`/projects/`}>
             Projects
           </Link>
