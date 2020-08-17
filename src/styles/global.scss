@@ -28,20 +28,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .header-title {
+        display: inline-block;
+        font-style: normal;
+    }
+
     .nav {
-        @media (max-width: 400px) {
+        & > * {
+            margin-left: $xl;
+        }
+
+        @media (max-width: 650px) {
             display: none;
         }
     }
 }
 
-.header-title {
-    display: inline-block;
-    font-style: normal;
+.burger-menu-wrapper {
+    @media (min-width: 650px) {
+        display: none;
+    }
 }
-
-.nav > * {
-    margin-left: $xl;
+.bm-menu {
 }
 
 // ol, ul {

@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import { BurgerMenu } from './BurgerMenu'
+import BurgerMenu from './BurgerMenu'
 
 export default function Layout({ children }) {
     const data = useStaticQuery(
@@ -16,7 +16,10 @@ export default function Layout({ children }) {
     )
 
   return (
+    <>
+    <BurgerMenu side="right" />
     <div className="site-wrapper">
+
       <div className="header-and-nav-wrapper">
         <header>
               <h3 className="header-title">
@@ -47,5 +50,6 @@ export default function Layout({ children }) {
         {children}
       </main>
     </div>
+    </>
   )
 }
