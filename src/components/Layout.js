@@ -29,20 +29,17 @@ export default function Layout({ children }) {
               </h3>
         </header>
         <nav className="nav">
+          <Link to={`/`}>
+            Home
+          </Link>
           <Link to={`/projects/`}>
-              Projects
+            Projects
           </Link>
           <Link to={`/blog/`}>
-              Blog
+            Blog
           </Link>
           <Link to={`/resume/`}>
-              Resume
-          </Link>
-          <Link to={`/bio/`}>
-              Photos
-          </Link>
-          <Link to={`/bio/`}>
-              Email
+            Resume
           </Link>
         </nav>
       </div>

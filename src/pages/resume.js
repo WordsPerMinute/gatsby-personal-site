@@ -13,11 +13,16 @@ export default function Resume({ data }) {
     <Layout>
         <ContentHeader headerText="Resume"/>
         <h4 className="section-subheading">
-          <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>View</a>
-          <span> or </span>
-          <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>save</a>
-          <span></span>
+          <span className="standard-screen-resume-text">
+            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>View</a>
+            <span> or </span>
+            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>save</a>
+          </span>
+          <span className="small-screen-resume-text">
+            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Here</a> or click preview below
+          </span>
         </h4>
+        <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'><img src={require('../images/resume_preview2.png')} className="resume-preview" /></a>
         <SizeMe>
         {({ size }) => (
             <Document

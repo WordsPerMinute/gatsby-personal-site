@@ -13,6 +13,9 @@ export default class BurgerMenu extends React.Component {
     return (
       <div className="burger-menu-wrapper">
         <Menu right width={ 250 }>
+          <Link to={`/`}>
+            Home
+          </Link>
           <Link to={`/projects/`}>
             Projects
           </Link>
@@ -21,12 +24,6 @@ export default class BurgerMenu extends React.Component {
           </Link>
           <Link to={`/resume/`}>
             Resume
-          </Link>
-          <Link to={`/bio/`}>
-            Photos
-          </Link>
-          <Link to={`/bio/`}>
-            Email
           </Link>
         </Menu>
       </div>

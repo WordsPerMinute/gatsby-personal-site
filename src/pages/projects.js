@@ -17,7 +17,6 @@ export default function Projects({ data }) {
               <div className="project-icons">
                 <a href="https://www.youtube.com/watch?v=tLvKEjiw-aU"><FaYoutubeSquare className="icon youtube-icon" /></a>
                 <a href="https://github.com/WordsPerMinute/food-trucks-show"><DiGithubBadge className="icon github-icon" /></a>
-
               </div>
             </div>
             <img src={require('../images/fts_overview.gif')}  alt="overview animation for FoodTrucks.Show"/>

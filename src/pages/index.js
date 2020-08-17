@@ -9,7 +9,7 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
-        <ContentHeader headerText="Howdy. Hola."/>
+        <ContentHeader headerText="Welcome!" thumbsUp />
         <p>
           I am a developer who has lived in 10 U.S. states, Chile, and Germany. I have a passion for how digital networks help us connect and learn across borders.
         </p>
