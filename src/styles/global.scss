@@ -46,8 +46,6 @@ footer {
         -
         (100vw - 100%)
     );
-    // margin-right: -50px;
-    background-color: #fdf6e3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,5 +255,12 @@ main {
     @media (max-width: 600px) {
         min-width: 0;
         flex: auto;
+    }
+}
+
+a[aria-current="page"] {
+    &:not(.dont-underline) {
+        text-decoration: underline;
+        text-decoration-color: #195b8a50;
     }
 }

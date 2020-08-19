@@ -24,7 +24,7 @@ export default function Layout({ children }) {
           <div className="header-and-nav-wrapper">
             <header>
                   <h3 className="header-title">
-                    <Link to={`/`}>
+                    <Link to={`/`} className="dont-underline">
                     {data.site.siteMetadata.title}
                     </Link>
                   </h3>

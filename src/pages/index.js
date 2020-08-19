@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import ContentHeader from "../components/ContentHeader"
 import Layout from "../components/Layout"
@@ -6,9 +6,12 @@ import Helmet from "react-helmet"
 
 
 export default function Home({ data }) {
-  console.log(data)
+  const [currentPage, setCurrentPage] = useState(null);
+  
   return (
-    <Layout>
+    <Layout
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage}>
         <Helmet>
           <meta name="description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
           <meta name="keywords" content="blog, web developer, software engineer, gatsby, colorado" />
