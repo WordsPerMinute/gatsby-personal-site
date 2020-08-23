@@ -39,7 +39,7 @@ export default function Resume({ data }) {
         {({ size }) => (
             <Document
               className="resume"
-              file={"https://cors-anywhere.herokuapp.com/https://coreyhodge.net/Resume.pdf"}
+              file={samplepdf}
               renderAnnotationLayer={true}
               externalLinkTarget="_blank">
               <Page pageNumber={1} width={size.width ? 698 : 1}/>

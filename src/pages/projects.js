@@ -37,9 +37,6 @@ export default function Projects({ data }) {
             <p>
               The fastest way to find hot pizza in your area!
             </p>
-            <p className="special-note">
-              NOTE: As of Aug 17th I've noticed a bug due to a recent change in Google's API, will be fixing ASAP
-            </p>
           </div>
           <div className="project-card">
             <div className="project-header">
@@ -52,6 +49,19 @@ export default function Projects({ data }) {
             <img src={require('../images/fts_overview.gif')}  alt="overview animation for FoodTrucks.Show"/>
             <p>
               Show local Denver food trucks on a lightweight and easy to use interface
+            </p>
+          </div>
+          <div className="project-card">
+            <div className="project-header">
+              <h2>Portfolio</h2>
+              <div className="project-icons">
+                <a href="https://coreyhodge.net/old" alt="Demo for goto.pizza"><FaExternalLinkSquareAlt className="icon external-icon" /></a>
+                <a href="https://github.com/WordsPerMinute/portfolio-site" alt="Git Hub repo for FoodTrucks.Show"><DiGithubBadge className="icon github-icon" /></a>
+              </div>
+            </div>
+            <img src={require('../images/portfolio_overview.gif')}  alt="overview animation for FoodTrucks.Show"/>
+            <p>
+              My past portfolio, only HTML/CSS/JS, framework-free. You're currently on the improved Gatsby redesign
             </p>
           </div>
           <div className="project-card">
