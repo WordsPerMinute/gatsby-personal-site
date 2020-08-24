@@ -25,6 +25,19 @@ export default function Projects({ data }) {
         </Helmet>
         <ContentHeader headerText="Projects"/>
         <section className="project-cards-container">
+        <div className="project-card">
+            <div className="project-header">
+              <h2>Spanish Diminutive Generator</h2>
+              <div className="project-icons">
+                {/* <a href="https://goto.pizza" alt="Demo for Spanish Diminutive Generator"><FaExternalLinkSquareAlt className="icon external-icon" /></a> */}
+                <a href="https://github.com/WordsPerMinute/spanish-diminutive-generator" alt="Git Hub repo for goto.pizza"><DiGithubBadge className="icon github-icon" /></a>
+              </div>
+            </div>
+            <img src={require('../images/sdg_overview.gif')}  alt="overview animation for Spanish Diminutive Generator" className="portrait" />
+            <p>
+            Input a Spanish word and get its diminutive. casa => casita, pantalón => pantaloncito
+            </p>
+          </div>
           <div className="project-card">
             <div className="project-header">
               <h2>Goto.pizza</h2>
@@ -35,7 +48,7 @@ export default function Projects({ data }) {
             </div>
             <img src={require('../images/goto_overview.png')}  alt="overview animation for Goto.Pizza"/>
             <p>
-              The fastest way to find hot pizza in your area!
+              The fastest way to find hot pizza in your area
             </p>
           </div>
           <div className="project-card">
@@ -55,11 +68,11 @@ export default function Projects({ data }) {
             <div className="project-header">
               <h2>Portfolio</h2>
               <div className="project-icons">
-                <a href="https://coreyhodge.net/old" alt="Demo for goto.pizza"><FaExternalLinkSquareAlt className="icon external-icon" /></a>
+                <a href="https://coreyhodge.net/old" alt="Demo for old portfolio"><FaExternalLinkSquareAlt className="icon external-icon" /></a>
                 <a href="https://github.com/WordsPerMinute/portfolio-site" alt="Git Hub repo for FoodTrucks.Show"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>
-            <img src={require('../images/portfolio_overview.gif')}  alt="overview animation for FoodTrucks.Show"/>
+            <img src={require('../images/portfolio_overview.gif')}  alt="overview animation for Portfolio"/>
             <p>
               My past portfolio, only HTML/CSS/JS, framework-free. You're currently on the improved Gatsby redesign
             </p>

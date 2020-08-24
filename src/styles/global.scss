@@ -250,7 +250,14 @@ main {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     h2 {
-        text-align: center;
+        @media (max-width: 400px) {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            min-width: 0;
+            flex: auto;
+        }
         font-size: $font-large;
     }
     p {
@@ -264,8 +271,14 @@ main {
     }
     // max-width: 650px;
     img {
+        max-height: 175px;
         max-width: 100%;
         border-radius: 5px 5px 0 0;
+    }
+
+    .portrait {
+        display:block;
+        margin: 0 auto;
     }
 
     @media (max-width: 600px) {
