@@ -14,12 +14,13 @@ export default function Bio({ data }) {
           <meta name="description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
           <meta name="keywords" content="blog, web developer, software engineer, gatsby, colorado" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Corey Hodge / Colorado" />
+          <meta property="og:title" content="CoreyHodge.net - Blog" />
           <meta property="og:description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
           <meta property="og:image" content="http://www.coreyhodge.net/assets/corey.png" />
           <meta property="og:locale" content="LINK TO THE IMAGE FILE" />
           <meta property="og:url" content="https://www.coreyhodge.net/blog" />
           <meta property="og:site_name" content="Corey Hodge / Colorado" />
+          <title>CoreyHodge.net - Blog</title>
           <link rel="canonical" href="https://www.coreyhodge.net/blog" />
         </Helmet>
         <ContentHeader headerText="Blog"/>
