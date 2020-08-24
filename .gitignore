@@ -3,6 +3,7 @@
 cgi-bin
 u
 assets
+old
 
 # HostGator files
 .htaccess
