@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import { SizeMe } from 'react-sizeme'
-import samplepdf from './Resume.pdf'
+import samplepdf from '../images/Resume.pdf'
 import Helmet from "react-helmet"
 
 
