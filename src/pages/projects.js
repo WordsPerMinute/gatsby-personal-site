@@ -30,7 +30,7 @@ export default function Projects({ data }) {
             <div className="project-header">
               <h2>Spanish Diminutive Generator</h2>
               <div className="project-icons">
-                {/* <a href="https://goto.pizza" alt="Demo for Spanish Diminutive Generator"><FaExternalLinkSquareAlt className="icon external-icon" /></a> */}
+                <a href="https://coreyhodge.net/spanish-diminutive-generator" alt="Demo for Spanish Diminutive Generator"><FaExternalLinkSquareAlt className="icon external-icon" /></a>
                 <a href="https://github.com/WordsPerMinute/spanish-diminutive-generator" alt="Git Hub repo for goto.pizza"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>

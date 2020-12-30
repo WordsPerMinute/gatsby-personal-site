@@ -19,7 +19,7 @@ How does the app work? Input a word and get its Spanish diminutive, along with a
 
 For the scope of this post, the need for the scraper isn't related to the images, but rather the words themselves.
 
-In order to properly generate the diminutive form of the word entered, the algorithm needs to now the word's gender. In Spanish, there are two genders: masculine and feminine (whereas some languages, like German, has a neuter gender for a total of 3 genders). Usually, you can tell the gender of a Spanish word by its ending. Does it end in 'a'? It's feminine. What about 'o'? Masculine.
+In order to properly generate the diminutive form of the word entered, the algorithm needs to know the word's gender. In Spanish, there are two genders: masculine and feminine (whereas some languages, like German, has a neuter gender for a total of 3 genders). Usually, you can tell the gender of a Spanish word by its ending. Does it end in 'a'? It's feminine. What about 'o'? Masculine.
 
 However, some words have the same ending letter but different genders. For example, 'lapiz' (pencil) is masculine, while 'nariz' (nose) is feminine. This means that my algorithm should turn 'lapiz' into 'lapicito' and 'nariz' into 'naricita'.
 
