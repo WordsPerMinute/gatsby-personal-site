@@ -19,6 +19,10 @@ body {
     padding-left: $scrollbar-width;
 }
 
+strong {
+    font-weight: bold;
+  }
+
 .site-wrapper {
     position: relative;
     padding-bottom: 100px;

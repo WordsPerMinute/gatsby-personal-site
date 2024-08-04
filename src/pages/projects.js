@@ -30,7 +30,7 @@ export default function Projects({ data }) {
             </div>
             <img src={sdgOverview}  alt="overview animation for Spanish Diminutive Generator" className="portrait" />
             <p>
-            Input a Spanish word and get its diminutive. casa ➡️ casita, pantalón ➡️ pantaloncito
+            Input a Spanish word and get its diminutive. (ex: casa &gt; <strong>casita</strong>; pantalón &gt; <strong>pantaloncito</strong>)
             </p>
           </div>
           <div className="project-card">

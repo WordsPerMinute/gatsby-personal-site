@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
-import { FaMedium } from "react-icons/fa"
+// import { FaMedium } from "react-icons/fa"
 
 
 export default function Blog({ data }) {
@@ -11,9 +11,14 @@ export default function Blog({ data }) {
   return (
     <Layout>
         <ContentHeader headerText="Blog"/>
-        <h4 className="section-subheading">{data.allMarkdownRemark.totalCount} Posts<span className="special-note-medium-blog">—code school posts are on {
+        <h4 className="section-subheading">{data.allMarkdownRemark.totalCount} posts
+          {/* TODO: decide whether to keep or not...*/}
+          {/* <span className="special-note-medium-blog">
+          —code school posts are on {
           <a href="https://medium.com/@coreyhodgedotnet" target='_blank' rel="noopener noreferrer"><FaMedium className="special-fa-icon" alt="my Medium blog" /></a>
-          }</span></h4>
+          }</span> */}
+          
+          </h4>
         {/* map over the blog instances to population them on the page */}
         {data.allMarkdownRemark.edges.map(({ node }) => {
         const image = getImage(node.frontmatter.previewPic.childImageSharp.gatsbyImageData);
