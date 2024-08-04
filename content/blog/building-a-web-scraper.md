@@ -1,7 +1,7 @@
 ---
 title: "How I Built a Simple Web Scraper"
 date: "2020-08-23"
-featuredImage: ./blog-images/building-a-web-scraper/sdg_preview.png
+featuredImage: "./blog-images/building-a-web-scraper/sdg_preview.png"
 previewPic: "../../content/blog/blog-images/building-a-web-scraper/sdg_preview.png"
 ---
 

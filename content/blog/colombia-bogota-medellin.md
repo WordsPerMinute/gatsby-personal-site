@@ -1,7 +1,7 @@
 ---
 title: "Colombia"
 date: "2018-08-01"
-featuredImage: ./blog-images/colombia/Colombia-2.jpg
+featuredImage: "./blog-images/colombia/Colombia-2.jpg"
 previewPic: "../../content/blog/blog-images/colombia/Colombia-2.jpg"
 ---
 

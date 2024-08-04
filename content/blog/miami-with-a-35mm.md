@@ -1,7 +1,7 @@
 ---
 title: "Miami with a 35mm"
 date: "2016-03-01"
-featuredImage: ./blog-images/miami/miami-114.jpg
+featuredImage: "./blog-images/miami/miami-114.jpg"
 previewPic: "../../content/blog/blog-images/miami/miami-114.jpg"
 ---
 

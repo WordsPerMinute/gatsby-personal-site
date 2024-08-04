@@ -8,6 +8,14 @@ import { DiGithubBadge } from 'react-icons/di'
 import { FaYoutubeSquare } from 'react-icons/fa'
 import { FaExternalLinkSquareAlt } from 'react-icons/fa'
 
+import sdgOverview from '../images/sdg_overview.gif';
+import gotoOverview from '../images/goto_overview.png';
+import ftsOverview from '../images/fts_overview.gif';
+import portfolioOverview from '../images/portfolio_overview.gif';
+import ybbOverview from '../images/ybb_overview.gif';
+import mtsOverview from '../images/mts_overview.gif';
+
+
 export default function Projects({ data }) {
   return (
     <Layout>
@@ -34,9 +42,9 @@ export default function Projects({ data }) {
                 <a href="https://github.com/WordsPerMinute/spanish-diminutive-generator" alt="Git Hub repo for goto.pizza"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>
-            <img src={require('../images/sdg_overview.gif')}  alt="overview animation for Spanish Diminutive Generator" className="portrait" />
+            <img src={sdgOverview}  alt="overview animation for Spanish Diminutive Generator" className="portrait" />
             <p>
-            Input a Spanish word and get its diminutive. casa => casita, pantalón => pantaloncito
+            Input a Spanish word and get its diminutive. casa ➡️ casita, pantalón ➡️ pantaloncito
             </p>
           </div>
           <div className="project-card">
@@ -47,7 +55,7 @@ export default function Projects({ data }) {
                 <a href="https://github.com/bdell/goto.pizza" alt="Git Hub repo for goto.pizza"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>
-            <img src={require('../images/goto_overview.png')}  alt="overview animation for Goto.Pizza"/>
+            <img src={gotoOverview}  alt="overview animation for Goto.Pizza"/>
             <p>
               The fastest way to find hot pizza in your area
             </p>
@@ -60,7 +68,7 @@ export default function Projects({ data }) {
                 <a href="https://github.com/WordsPerMinute/food-trucks-show" alt="Git Hub repo for FoodTrucks.Show"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>
-            <img src={require('../images/fts_overview.gif')}  alt="overview animation for FoodTrucks.Show"/>
+            <img src={ftsOverview}  alt="overview animation for FoodTrucks.Show"/>
             <p>
               Show local Denver food trucks on a lightweight and easy to use interface
             </p>
@@ -73,7 +81,7 @@ export default function Projects({ data }) {
                 <a href="https://github.com/WordsPerMinute/portfolio-site" alt="Git Hub repo for FoodTrucks.Show"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>
-            <img src={require('../images/portfolio_overview.gif')}  alt="overview animation for Portfolio"/>
+            <img src={portfolioOverview}  alt="overview animation for Portfolio"/>
             <p>
               My past portfolio, only HTML/CSS/JS, framework-free. You're currently on the improved Gatsby redesign
             </p>
@@ -86,7 +94,7 @@ export default function Projects({ data }) {
 
               </div>
             </div>
-            <img src={require('../images/ybb_overview.gif')}  alt="overview animation for You, but Better"/>
+            <img src={ybbOverview}  alt="overview animation for You, but Better"/>
             <p>
             Social goal accountability app, designed around the SMART goal framework
             </p>
@@ -98,7 +106,7 @@ export default function Projects({ data }) {
                 <a href="https://github.com/WordsPerMinute/Match-To-Speak" alt="Git Hub repo for Match to Speak"><DiGithubBadge className="icon github-icon" /></a>
               </div>
             </div>
-            <img src={require('../images/mts_overview.gif')} alt="overview animation for Match to Speak"/>
+            <img src={mtsOverview} alt="overview animation for Match to Speak"/>
             <p>
             Proof of concept app to match foreign language learners with teachers
             </p>

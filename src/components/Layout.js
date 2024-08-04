@@ -1,5 +1,8 @@
 import React from "react"
+
 import { useStaticQuery, Link, graphql } from "gatsby"
+import { FaExternalLinkAlt } from 'react-icons/fa'
+
 import BurgerMenu from './BurgerMenu'
 import Footer from './Footer'
 
@@ -40,7 +43,7 @@ export default function Layout({ children }) {
                 Blog
               </Link>
               <Link to={`/resume/`}>
-                Resume
+                Resume <FaExternalLinkAlt className="icon external-icon" />
               </Link>
             </nav>
           </div>

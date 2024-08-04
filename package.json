@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "gatsby": "^5.0.0",
-    "gatsby-image": "^3.11.0",
     "gatsby-plugin-emotion": "^8.13.1",
+    "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
@@ -24,15 +24,14 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
-    "sass": "^1.72.0",
     "react": "^18.0.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
-    "react-pdf": "^7.7.1",
     "react-sizeme": "^3.0.2",
-    "react-typography": "^0.16.19"
+    "react-typography": "^0.16.19",
+    "sass": "^1.72.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"

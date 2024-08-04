@@ -2,8 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
-import { Document, Page } from 'react-pdf';
-import 'react-pdf/dist/Page/AnnotationLayer.css';
+// import { Document, Page } from 'react-pdf';
+// import 'react-pdf/dist/Page/AnnotationLayer.css';
 import { SizeMe } from 'react-sizeme'
 import samplepdf from '../images/Resume.pdf'
 import Helmet from "react-helmet"
@@ -36,7 +36,7 @@ export default function Resume({ data }) {
           </span>
         </h4>
         <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'><img src={require('../images/resume_preview2.png')} className="resume-preview" alt="Corey's resume"   /></a>
-        <SizeMe>
+        {/* <SizeMe>
         {({ size }) => (
             <Document
               className="resume"
@@ -46,7 +46,7 @@ export default function Resume({ data }) {
               <Page pageNumber={1} width={size.width ? 698 : 1}/>
             </Document>
           )}
-        </SizeMe>
+        </SizeMe> */}
     </Layout>
   )
 }
