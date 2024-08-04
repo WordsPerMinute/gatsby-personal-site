@@ -158,30 +158,6 @@ footer {
     }
 }
 
-.resume-preview {
-    display: none;
-    @media (max-width: 675px) {
-        padding-top: $baseline;
-        display: block;
-        margin: auto;
-        width: auto;
-    }
-}
-
-.small-screen-resume-text {
-    display: none;
-    @media (max-width: 675px) {
-        display: block;
-    }
-}
-
-.standard-screen-resume-text {
-    @media (max-width: 675px) {
-        display: none;
-    }
-}
-
-
 .project-cards-container {
     display: flex;
     flex-wrap: wrap;

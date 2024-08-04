@@ -1,8 +1,3 @@
-// The old Ubuntu style :)
-// @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono&display=swap');
-// $title-font: 'Ubuntu Mono', monospace;
-// $body-font: 'Ubuntu', sans-serif;
-
 @import url(https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto&display=swap);
 
 $title-font: 'Lora', serif;
@@ -62,6 +57,17 @@ h4 {
     &.section-subheading {
         margin-top: -$large;
         margin-left: 35px;
+    }
+    &.section-subheading.resume-heading-link {
+        margin-top: -$small;
+        .resume-text a {
+            display: flex;
+            align-items: center;
+            .external-icon {
+                font-size: $font-xs;
+                margin-left: 6px;
+            }
+        }
     }
 }
 

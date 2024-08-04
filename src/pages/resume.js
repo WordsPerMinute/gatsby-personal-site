@@ -1,12 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
+
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
-// import { Document, Page } from 'react-pdf';
-// import 'react-pdf/dist/Page/AnnotationLayer.css';
-import { SizeMe } from 'react-sizeme'
-import samplepdf from '../images/Resume.pdf'
 import Helmet from "react-helmet"
+
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 
 export default function Resume({ data }) {
@@ -27,26 +26,11 @@ export default function Resume({ data }) {
           <link rel="canonical" href="https://www.coreyhodge.net/resume" />
         </Helmet>
         <ContentHeader headerText="Resume"/>
-        <h4 className="section-subheading">
-          <span className="standard-screen-resume-text">
-            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Download</a>
-          </span>
-          <span className="small-screen-resume-text">
-            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Download</a> or click preview below
+        <h4 className="section-subheading resume-heading-link">
+          <span className="resume-text">
+            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Download  <FaExternalLinkAlt className="icon external-icon" /></a>
           </span>
         </h4>
-        <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'><img src={require('../images/resume_preview2.png')} className="resume-preview" alt="Corey's resume"   /></a>
-        {/* <SizeMe>
-        {({ size }) => (
-            <Document
-              className="resume"
-              file={samplepdf}
-              renderAnnotationLayer={true}
-              externalLinkTarget="_blank">
-              <Page pageNumber={1} width={size.width ? 698 : 1}/>
-            </Document>
-          )}
-        </SizeMe> */}
     </Layout>
   )
 }
