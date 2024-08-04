@@ -28,7 +28,7 @@ export default function Resume({ data }) {
         <ContentHeader headerText="Resume"/>
         <h4 className="section-subheading resume-heading-link">
           <span className="resume-text">
-            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Download  <FaExternalLinkAlt className="icon external-icon" /></a>
+            <a href="https://coreyhodge.net/Resume.pdf" target='_blank' rel='noopener noreferrer'>Download<FaExternalLinkAlt className="icon external-icon" /></a>
           </span>
         </h4>
     </Layout>
