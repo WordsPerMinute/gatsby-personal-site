@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-plugin-image"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 
 export default function BlogPost({ data }) {
@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
 
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} description={post.excerpt} />
+            <Seo title={post.frontmatter.title} description={post.excerpt} />
             <div>
                 <h1>{post.frontmatter.title}</h1>
                 <Img fluid={featuredImgFluid} />

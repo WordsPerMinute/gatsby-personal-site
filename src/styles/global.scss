@@ -55,10 +55,10 @@ footer {
     }
     .fa-icon {
         color: #195B8A;
+        transition: .3s;
         &:not(.first) {
             margin-left: 32px;
         }
-        transition: .3s;
         &:hover {
             color: #cb4b16;
         }
@@ -206,15 +206,14 @@ footer {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     h2 {
+        font-size: $font-large;
         @media (max-width: 400px) {
             text-align: center;
         }
-
         @media (max-width: 600px) {
             min-width: 0;
             flex: auto;
         }
-        font-size: $font-large;
     }
     p {
         font-size: $font-small;

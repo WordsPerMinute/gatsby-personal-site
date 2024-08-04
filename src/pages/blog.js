@@ -1,5 +1,5 @@
 import React from "react";
-import {  Link, graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
 import Helmet from "react-helmet"
@@ -28,7 +28,7 @@ export default function Bio({ data }) {
           <a href="https://medium.com/@coreyhodgedotnet" target='_blank' rel="noopener noreferrer"><FaMedium className="special-fa-icon" alt="my Medium blog" /></a>
           }</span></h4>
         {/* map over the blog instances to population them on the page */}
-        {/* {data.allMarkdownRemark.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({ node }) => (
           <article className="blog-preview article-card" key={node.id}>
             <Link className="link" to={node.fields.slug} >
               <h3>
@@ -41,7 +41,7 @@ export default function Bio({ data }) {
               <p className="post-excerpt">{node.excerpt}</p>
             </Link>
           </article>
-        ))} */}
+        ))}
     </Layout>
   )
 }
