@@ -44,5 +44,15 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-exclude',
+      options: {
+        paths: [
+          '**/README.md',    // Exclude README.md files
+          '**/.*',           // Exclude dot files
+          // Add more patterns as needed
+        ],
+      },
+    },
   ],
 }
