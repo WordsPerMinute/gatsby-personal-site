@@ -1,7 +1,7 @@
 ---
 title: "A Slice of Chile"
 date: "2017-08-01"
-featuredImage: "./blog-images/chile/1-2-1000x700.jpeg"
+featuredImage: ./blog-images/chile/1-2-1000x700.jpeg
 previewPic: "../../content/blog/blog-images/chile/1-2-1000x700.jpeg"
 ---
 
@@ -122,4 +122,6 @@ Maybe for a different photo compilation in Santiago?
 
 ![](./blog-images/chile/1-20.jpeg)
 
-[return home](https://coreyhodge.net)
+[return to blog](/blog)  
+or  
+[return home](/)

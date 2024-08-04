@@ -1,6 +1,4 @@
-import "./src/styles/global.scss"
-
-export const onClientEntry = () => {
+export const onRenderBody = () => {
     const originalConsoleError = console.error;
     console.error = (...args) => {
       if (args.some(arg => 

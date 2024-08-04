@@ -1,7 +1,7 @@
 ---
 title: "How I Built a Simple Web Scraper"
 date: "2020-08-23"
-featuredImage: "./blog-images/building-a-web-scraper/sdg_preview.png"
+featuredImage: ./blog-images/building-a-web-scraper/sdg_preview.png
 previewPic: "../../content/blog/blog-images/building-a-web-scraper/sdg_preview.png"
 ---
 
@@ -83,4 +83,6 @@ This scraper function allows me to verify the gender of a word a users passes be
 
 That's the basics of a web scraper!
 
-[return home](https://coreyhodge.net)
+[return to blog](/blog)  
+or  
+[return home](/)

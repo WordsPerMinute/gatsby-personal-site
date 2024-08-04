@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import ContentHeader from '../components/ContentHeader'
 import Layout from "../components/Layout";
-import Helmet from "react-helmet"
 
 import { DiGithubBadge } from 'react-icons/di'
 import { FaYoutubeSquare } from 'react-icons/fa'
@@ -19,19 +18,6 @@ import mtsOverview from '../images/mts_overview.gif';
 export default function Projects({ data }) {
   return (
     <Layout>
-        <Helmet>
-          <meta name="description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
-          <meta name="keywords" content="blog, web developer, software engineer, gatsby, colorado" />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="CoreyHodge.net - Projects" />
-          <meta property="og:description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
-          <meta property="og:image" content="http://www.coreyhodge.net/assets/corey.png" />
-          <meta property="og:locale" content="LINK TO THE IMAGE FILE" />
-          <meta property="og:url" content="https://www.coreyhodge.net/projects" />
-          <meta property="og:site_name" content="Corey Hodge / Colorado" />
-          <title>CoreyHodge.net - Projects</title>
-          <link rel="canonical" href="https://www.coreyhodge.net/projects" />
-        </Helmet>
         <ContentHeader headerText="Projects"/>
         <section className="project-cards-container">
         <div className="project-card">
@@ -113,6 +99,24 @@ export default function Projects({ data }) {
           </div>
         </section>
     </Layout>
+  )
+}
+
+export function Head() {
+  return (
+    <>
+      <meta name="description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
+      <meta name="keywords" content="blog, web developer, software engineer, gatsby, colorado" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="CoreyHodge.net - Projects" />
+      <meta property="og:description" content="The life and times of Colorado's Corey Hodge. You'll find his bio, projects, writings, and more, all for the low introductory price of free!" />
+      <meta property="og:image" content="http://www.coreyhodge.net/assets/corey.png" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:url" content="https://www.coreyhodge.net/projects" />
+      <meta property="og:site_name" content="Corey Hodge / Colorado" />
+      <title>CoreyHodge.net - Projects</title>
+      <link rel="canonical" href="https://www.coreyhodge.net/projects" />
+    </>
   )
 }
 

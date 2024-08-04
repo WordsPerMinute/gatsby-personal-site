@@ -1,27 +1,36 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 
 
 export default function BlogPost({ data }) {
     const post = data.markdownRemark
-    console.log(post)
 
-    let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+    let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp
 
     return (
         <Layout>
-            <Seo title={post.frontmatter.title} description={post.excerpt} />
             <div>
                 <h1>{post.frontmatter.title}</h1>
-                <Img fluid={featuredImgFluid} />
+                <GatsbyImage fluid={featuredImgFluid} />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </Layout>
     )
 }
+
+export function Head({ data }) {
+    const post = data.markdownRemark
+    return (
+      <Seo
+        title={post.frontmatter.title}
+        description={post.excerpt}
+      />
+    )
+  }
+  
 
 export const query = graphql`
     query($slug: String!) {
@@ -31,9 +40,7 @@ export const query = graphql`
                 title
                 featuredImage {
                     childImageSharp {
-                        fluid(maxWidth: 800) {
-                        ...GatsbyImageSharpFluid
-                        }
+                        gatsbyImageData(layout: CONSTRAINED, width: 800)
                     }
                 }
             }

@@ -1,7 +1,7 @@
 ---
 title: "Miami with a 35mm"
 date: "2016-03-01"
-featuredImage: "./blog-images/miami/miami-114.jpg"
+featuredImage: ./blog-images/miami/miami-114.jpg
 previewPic: "../../content/blog/blog-images/miami/miami-114.jpg"
 ---
 
@@ -121,23 +121,6 @@ Before this trip, I always approached people and asked first before snapping the
 
 ![](./blog-images/miami/miami-155.jpg)
 
-[return home](https://coreyhodge.net)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[return to blog](/blog)  
+or  
+[return home](/)
